@@ -3,5 +3,6 @@
 
 	* libc/stdio/putchar.c: added UART based putchar implementation
 	* libc/stdio/puts.c: added puts based on putchar
+	* libc/stdio/printf.c: added printf stub
 
 	* include/stdio.h: added EOF, added prototypes for puts and putchar
