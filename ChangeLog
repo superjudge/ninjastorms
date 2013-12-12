@@ -1,0 +1,7 @@
+
+2013-12-12  Andreas Grapentin  <andreas@grapentin.org>
+
+	* libc/stdio/putchar.c: added UART based putchar implementation
+	* libc/stdio/puts.c: added puts based on putchar
+
+	* include/stdio.h: added EOF, added prototypes for puts and putchar
