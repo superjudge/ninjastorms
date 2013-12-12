@@ -1,8 +1,14 @@
 
 2013-12-12  Andreas Grapentin  <andreas@grapentin.org>
 
+	* libc/errno/errno.c: added simple errno 
 	* libc/stdio/putchar.c: added UART based putchar implementation
 	* libc/stdio/puts.c: added puts based on putchar
-	* libc/stdio/printf.c: added printf stub
+	* libc/stdio/printf.c: added printf implementation, using vprintf
+	* libc/stdio/vprintf.c: added simple vprintf function (only %c yet)
 
-	* include/stdio.h: added EOF, added prototypes for puts and putchar
+	* include/stdio.h: added EOF, added prototypes for puts and putchar,
+	printf, vprintf
+	* include/stddef.h: added offsetof macro
+	* include/errno.h: added most basic errno
+	* include/sys/types.h: added size_t
