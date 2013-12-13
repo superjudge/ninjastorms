@@ -1,4 +1,15 @@
 
+2013-12-13  Andreas Grapentin  <andreas@grapentin.org>
+
+	* include/stddef.h: using __builtin_offsetof for offsetof, ((void*)0)
+	for NULL
+	* include/string.h: added prototype for memset
+
+	* libc/stdio/vprintf.c: added implementation for %s format, %i format
+	returning chars_written on error, instead of EOF
+	* libc/string/memset.c: added simple memset implementation
+
+
 2013-12-12  Andreas Grapentin  <andreas@grapentin.org>
 
 	* libc/errno/errno.c: added simple errno 
