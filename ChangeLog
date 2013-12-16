@@ -13,9 +13,11 @@
 	* libp/gpio_pins.h: likewise
 	* libp/led.c: added simple interface to ev3 LEDs
 	* libp/led.h: likewise
+	* libp/button.c: added simple interface to ev3 buttons
+	* libp/button.h: likewise
 
-	* src/ev3ninja.c: using leds for more fancy hello world example
-	* src/startup.c: adding init call for leds
+	* src/ev3ninja.c: using leds and buttons for more fancy hello world example
+	* src/startup.c: adding init call for leds and buttons
 
 2013-12-13  Andreas Grapentin  <andreas@grapentin.org>
 
