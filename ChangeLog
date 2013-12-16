@@ -1,4 +1,22 @@
 
+2013-12-16  Andreas Grapentin  <andreas@grapentin.org>
+
+	* include/string.h: added prototypes for memcpy and memcmp
+
+	* libc/stdio/vprintf.c: fixed zero printing glitches, added %x and %X
+	format specifiers
+	* libc/string/memcmp.c: added naive memcmp implementation
+	* libc/string/memcpy.c: added naive memcpy implementation
+	
+	* libp/gpio.c: added handler module for general purpose input/output
+	* libp/gpio.h: likewise
+	* libp/gpio_pins.h: likewise
+	* libp/led.c: added simple interface to ev3 LEDs
+	* libp/led.h: likewise
+
+	* src/ev3ninja.c: using leds for more fancy hello world example
+	* src/startup.c: adding init call for leds
+
 2013-12-13  Andreas Grapentin  <andreas@grapentin.org>
 
 	* include/stddef.h: using __builtin_offsetof for offsetof, ((void*)0)
